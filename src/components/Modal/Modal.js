@@ -38,8 +38,6 @@ const Modal = (props) => {
 
         setNewComment({ ...newComment, id: newCommentId })
 
-
-
         axios.post(`https://boiling-refuge-66454.herokuapp.com/images/${imageId}/comments`, newComment)
 
         // отображаем добавление комментария, даже если он не добавляется на сервер

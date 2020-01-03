@@ -6,4 +6,4 @@ Safedeal. Проект выполнен на React.
 ## Запуск
 
 * npm i
-* npm run start
+* npm run start 

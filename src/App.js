@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import Gallery from './components/Gallery'
 import Modal from './components/Modal'
 import { Route } from 'react-router-dom';

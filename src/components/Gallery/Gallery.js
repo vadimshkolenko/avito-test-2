@@ -8,7 +8,6 @@ const Gallery = () => {
     const [images, setImages] = useState([])
     const [isLoaded, setLoaded] = useState(false)
     
-
     useEffect(() => {
         axios.get('https://boiling-refuge-66454.herokuapp.com/images')
             .then(response => {
