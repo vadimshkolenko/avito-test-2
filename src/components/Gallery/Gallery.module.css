@@ -1,9 +1,16 @@
+.loading {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
 h1 {
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 36px;
     text-align: center;
     font-weight: 400;
-    padding: 20px 0;
+    padding: 15px 0 30px 0;
 }
 
 .images {
@@ -15,4 +22,26 @@ h1 {
 .images img {
     margin-bottom: 40px;
     cursor: pointer;
+    object-fit: cover;
+    transition: all 0.3s;
+}
+
+.images img:hover {
+    opacity: 0.8;
+}
+
+@media screen and (min-width: 0px) and (max-width: 414px) {    
+    .images img {
+        width: 280px;
+        height: 171px;  
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 414px) and (max-width: 768px) {    
+    .images img {
+        width: 229px;
+        height: 142px;  
+        margin-bottom: 30px;
+    }
 }

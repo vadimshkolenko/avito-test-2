@@ -26,7 +26,7 @@ const Gallery = () => {
                         <NavLink to={`/${image.id}`} params={{ imageId: image.id }} key={image.id}>
                             <img src={image.url} key={image.id} data-index={image.id} />
                         </NavLink> 
-                    ) : <div>Загрузка...</div>
+                    ) : <div className={styles.loading}>Загрузка...</div>
                 }
             </div>
         </div>
