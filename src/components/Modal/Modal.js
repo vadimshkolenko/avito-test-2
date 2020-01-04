@@ -43,7 +43,7 @@ const Modal = (props) => {
         // отображаем добавление комментария, даже если он не добавляется на сервер
         setComments([...comments, newComment])
 
-        setNewComment({name: '', text: ''})
+        setNewComment({ name: '', text: '' })
     }
 
     window.addEventListener("keydown", function (event) {
@@ -59,18 +59,16 @@ const Modal = (props) => {
                 isLoaded ?
                     <div className={styles.content} onClick={(e) => e.stopPropagation()}>
                         <NavLink to='/' className={styles.close}>&#215;</NavLink>
-                        <div className={styles.photoAndComments}>
-                            <img src={imageURL} />
-                            <div className={styles.comments}>
-                                {
-                                    comments.map(comment =>
-                                        <div key={comment.id} className={styles.comment}>
-                                            <div className={styles.date}>18.12.2019</div>
-                                            <div>{comment.text}</div>
-                                        </div>
-                                    )
-                                }
-                            </div>
+                        <img src={imageURL} />
+                        <div className={styles.comments}>
+                            {
+                                comments.map(comment =>
+                                    <div key={comment.id} className={styles.comment}>
+                                        <div className={styles.date}>18.12.2019</div>
+                                        <div>{comment.text}</div>
+                                    </div>
+                                )
+                            }
                         </div>
                         <form onSubmit={handleSubmit}>
                             <input
@@ -89,6 +87,7 @@ const Modal = (props) => {
                             />
                             <button>Оставить комментарий</button>
                         </form>
+
                     </div> : <div className={styles.loading}>Загрузка...</div>
             }
 

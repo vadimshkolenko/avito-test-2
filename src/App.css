@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,400&display=swap');
 
 * {
     font-family: 'Roboto Condensed', 'Roboto', sans-serif;
-    font-style: normal;
 }
